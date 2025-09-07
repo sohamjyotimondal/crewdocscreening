@@ -1,0 +1,61 @@
+{
+  "project_info": {
+    "name": "AI-Driven Risk Prediction Engine for Chronic Care",
+    "generated_at": "2025-09-01T18:56:48.344909",
+    "total_runtime": "Pipeline completed"
+  },
+  "dataset_summary": {
+    "total_patients": 5000,
+    "total_records": 530000,
+    "date_range": "2025-02-05 to 2025-08-31",
+    "primary_conditions": {
+      "COPD": 391,
+      "Chronic Kidney Disease": 581,
+      "Heart Disease": 1036,
+      "Hypertension": 1301,
+      "Type 2 Diabetes": 1691
+    },
+    "deterioration_rate": "20.8%",
+    "average_monitoring_days": "106.0"
+  },
+  "model_performance": {
+    "AUROC": 0.9092336683417086,
+    "AUPRC": 0.6838548598961518,
+    "Sensitivity": 0.803921568627451,
+    "Specificity": 0.8479899497487438,
+    "Precision": 0.5754385964912281,
+    "F1_Score": 0.6707566462167689,
+    "F2_Score": 0.7447774750227066,
+    "Optimal_Threshold": 0.1
+  },
+  "risk_distribution": {
+    "high_risk_patients": 2092,
+    "medium_risk_patients": 2004,
+    "low_risk_patients": 904,
+    "average_risk_score": "63.7%"
+  },
+  "crewai_validation": "READY FOR CLINICAL PILOT",
+  "file_locations": {
+    "data_generated": "data/synthetic_patients.csv",
+    "model_trained": "models/trained_xgboost_model.pkl",
+    "explainer_created": "models/shap_explainer.pkl",
+    "predictions_generated": "data/model_predictions.csv",
+    "validation_completed": "reports/crewai_validation_report.json",
+    "summary_generated": "reports/project_summary.json"
+  },
+  "pipeline_features": [
+    "\u2705 Smart step skipping - resume interrupted runs",
+    "\u2705 Comprehensive logging and progress tracking",
+    "\u2705 XGBoost model with detailed training metrics",
+    "\u2705 SHAP explainer for AI interpretability",
+    "\u2705 CrewAI multi-agent validation system",
+    "\u2705 Interactive Streamlit dashboard"
+  ],
+  "next_steps": [
+    "1. Launch Streamlit dashboard: streamlit run main_app.py",
+    "2. Review CrewAI validation recommendations",
+    "3. Conduct clinical pilot testing",
+    "4. Monitor model performance in production",
+    "5. Collect feedback and iterate"
+  ]
+}
